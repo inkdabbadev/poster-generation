@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { toBlob, toJpeg } from "html-to-image";
 import jsPDF from "jspdf";
-import { BsGeoAltFill, BsEnvelopeFill } from "react-icons/bs";
+import { BsGeoAltFill, BsEnvelopeFill, BsTelephoneFill } from "react-icons/bs";
 
 type PriceData = {
   gold: number;
@@ -589,7 +589,7 @@ function PosterContent({
             position: "absolute",
             left: 0,
             right: 0,
-            top: "102px",
+            top: "88px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -641,6 +641,38 @@ function PosterContent({
             }}
           >
             smsjewellers377@gmail.com
+          </div>
+        </div>
+
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: "132px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "10px",
+          }}
+        >
+          <BsTelephoneFill
+            style={{
+              fontSize: "20px",
+              color: "#f5f0ea",
+              flexShrink: 0,
+            }}
+          />
+          <div
+            style={{
+              fontFamily: "Arial, Helvetica, sans-serif",
+              fontWeight: 700,
+              fontSize: "25px",
+              color: "#f5f0ea",
+              letterSpacing: "0.02em",
+            }}
+          >
+            +91 9944333884
           </div>
         </div>
       </div>
