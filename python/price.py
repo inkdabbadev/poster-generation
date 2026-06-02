@@ -111,13 +111,15 @@ if gold_price and silver_price:
 
     last = collection.find_one(sort=[("updatedAt", -1)])
 
-    if last and last["gold"] == gold_price and last["silver"] == silver_price:
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    if last and last["gold"] == gold_price and last["silver"] == silver_price and last.get("date") == today:
         print("No price change")
 
     else:
 
         data = {
-            "date": datetime.now().strftime("%Y-%m-%d"),
+            "date": today,
             "gold": gold_price,
             "silver": silver_price,
             "updatedAt": datetime.utcnow()
