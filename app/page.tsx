@@ -672,7 +672,7 @@ function PosterContent({
               letterSpacing: "0.02em",
             }}
           >
-            +91 9944333884
+            +91 8056369482
           </div>
         </div>
       </div>
